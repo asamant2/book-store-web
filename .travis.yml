@@ -1,6 +1,6 @@
 language: node_js
-version:
-  - v16.14.0
+node_js:
+  - "stable"
 script:
   - "npm run build"
   - "npm run test:nowatch"
