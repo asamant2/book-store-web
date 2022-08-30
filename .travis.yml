@@ -9,5 +9,5 @@ deploy:
   provide: heroku
   api_key: $HEROKU_TOKEN
   app: "book-store-webui"
-on:
-  branch: main
+  on:
+    branch: main
