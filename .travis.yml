@@ -3,6 +3,7 @@ node_js:
   - v16.14.0
 before_deploy:
   - rvm $(travis_internal_ruby) --fuzzy do ruby -S gem install faraday-net_http -v 2.1.0
+  - rvm $(travis_internal_ruby) --fuzzy do ruby -S gem install faraday -v 1.10.2
 script:
   - "npm run build"
   - "npm run test:nowatch"
