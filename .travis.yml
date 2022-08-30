@@ -4,3 +4,10 @@ version:
 script:
   - "npm run build"
   - "npm run test:nowatch"
+
+deploy:
+  provide: heroku
+  api_key: $HEROKU_TOKEN
+  app: "book-store-webui"
+on:
+  branch: main
